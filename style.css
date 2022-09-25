@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+:root{
+    --mainColor:#344955;
+    --mainSecondaryColor:#5f7481;
+    --navColor:#c6bb87;;
+    --secondaryColor:#f9aa33;
+    --borderColor:#faebd7;
+    --themeDotBorder:#24292e;
+    --main-theme-on-primary:black;
+    --secondaryText:#4b5156;
+    --mainText:#000000;
+    --main-theme-text-on-dark:#ffffff;
+    --main-typography-font-family:'Roboto', sans-serif;
+    --main-typography-headline1-font-family:'Roboto', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--mainText);
+    font: var(--main-typography-font-family);
+    font-weight: 700;
+}
+
+p, li, span, label, input, textarea{
+    color: var(--secondaryText);
+    font-family: var(--main-typography-font-family); 
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    color: var(--main-theme-text-on-dark);
+}
+
+.navbar-brand:hover{
+    color: var(--secondaryColor);
+}
+
+
+nav{
+    background-color: var(--mainColor);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: var(--main-theme-text-on-dark);
+}
+
+.nav-link{
+    color: var(--main-theme-text-on-dark);
+}
+
+.nav-link:hover{
+    color: var(--secondaryColor);
+}
+
+.offcanvas-title{
+    color: var(--main-theme-text-on-dark);
+}
+
+
+.offcanvas-header .btn-close{
+    color: var(--secondaryColor);
+}
+
+.nav-link:focus{
+    color: var(--secondaryColor);
+}
+
+.navbar-nav .dropdown-menu{
+    background-color: var(--secondaryColor);
+}
+
+.dropdown-item{
+    color: var(--mainText);
+}
+
+.dropdown-item:hover, .dropdown-item:focus{
+    color: var(--main-theme-text-on-dark);
+}
+
+
+.dropdown-menu{
+    --bs-dropdown-link-hover-bg:var(--secondaryColor);
+}
+
+.userprofile{
+    background-color: #eee;
+}
+
+button, .btn{
+    background-color: var(--secondaryColor) !important;
+    color: var(--main-theme-text-on-dark);
+}
+
+.profile-btn:hover{
+    background-color: var(--mainColor) !important;
+    color: var(--main-theme-text-on-dark) !important;
+}
+
+.progress-bar{
+    background-color: var(--secondaryColor) !important;
+    animation: progress 1500ms ease-in 1;
+}
+
+
+@keyframes progress{
+    from{
+        width: 0;
+    }
+}
+
+
+
